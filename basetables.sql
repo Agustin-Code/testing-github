@@ -1,6 +1,10 @@
 
-test push
+SELECT 
+  name 
+FROM edb_monthly.sys.tables
 
-SELECT table_name
-FROM INFORMATION_SCHEMA.TABLES
-WHERE table_type = 'BASE TABLE'
+except
+
+SELECT 
+  name 
+FROM EDB_Q423_M01.sys.tables; 
